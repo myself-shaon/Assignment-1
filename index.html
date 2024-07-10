@@ -125,5 +125,48 @@
     </div>
 
 </section>
+<section>
+    <style>
+        .centered-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height:  50px;
+        }
+        .relative-container {
+            position: relative;
+        }
+        .text-overlay {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+        
+           box-shadow: #0353c3;
+            border-radius: 5px;
+        }
+        .image {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="centered-container">
+        <div class="relative-container">
+            <img src="assets/handshake.jpg" alt="Image" class="image">
+            <div class="text-overlay"><h1>I need Support</h1>
+                <p>Im experiencing some issues that I need support with. Would you be available to help me work through these challenges?</p>
+                <input type="text" placeholder="Send me a Message!">
+                <input type="submit">
+            </div>
+            
+        </div>
+    </div>
+</section>
 </body>
 </html>
